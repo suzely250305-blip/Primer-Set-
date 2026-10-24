@@ -1,0 +1,15 @@
+PRIMER SET — sitio web inicial
+
+Incluye:
+- index.html: página responsive completa en español.
+- Diseño editorial con paleta crema, verde salvia, café y rosa terroso.
+- Navegación por secciones, menú móvil y preguntas desplegables.
+- Textos y enlaces internos preparados.
+
+Cómo previsualizar:
+1. Descomprime el archivo ZIP.
+2. Abre index.html en Chrome o cualquier navegador.
+3. Las fotografías y tipografías requieren conexión a internet.
+
+Importante:
+Este paquete es una versión inicial lista para previsualizar y adaptar. No está publicado en Carrd ni conectado a un dominio. Carrd no importa automáticamente archivos HTML completos; para usarlo allí, hay que recrear los bloques en su editor. Si se desea publicar exactamente este código, puede alojarse en un servicio de hosting estático.
