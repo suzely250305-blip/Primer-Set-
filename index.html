@@ -1,141 +1,874 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Primer Set: una guía cercana y sin presión para empezar en el gimnasio. Aprende a tu ritmo, resuelve tus dudas y celebra cada pequeño logro.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Primer Set: una guía cercana para comenzar en el gimnasio. Aprende lo básico, resuelve tus dudas y empieza a tu ritmo.">
 <meta name="theme-color" content="#f5f1e9">
-<title>Primer Set — Todo empieza con uno</title>
+<title>Primer Set | Todo empieza con uno</title>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
 <style>
-:root{--cream:#f5f1e9;--paper:#fffdf8;--ink:#292b25;--muted:#77776b;--sage:#74816a;--sage-dark:#4e5b46;--rose:#c58e86;--line:#ded9ce;--sand:#e8dfd0;--serif:'Playfair Display',Georgia,serif;--sans:'DM Sans',Arial,sans-serif}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--sans);line-height:1.65}a{color:inherit;text-decoration:none}img{display:block;width:100%;height:100%;object-fit:cover}.wrap{width:min(1160px,calc(100% - 48px));margin:auto}.eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:.72rem;font-weight:700;color:var(--sage-dark)}h1,h2,h3,p{margin-top:0}h1,h2,h3{font-weight:500;line-height:1.08}h1,h2{font-family:var(--serif)}h1{font-size:clamp(3.4rem,8vw,7.2rem);letter-spacing:-.055em;margin:20px 0}h2{font-size:clamp(2.4rem,5vw,4.4rem);letter-spacing:-.04em;margin-bottom:20px}h3{font-size:1.4rem;margin-bottom:12px}.lead{font-size:1.1rem;max-width:570px;color:#595b52}.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:14px 21px;border-radius:999px;border:1px solid var(--sage-dark);font-weight:600;font-size:.9rem;transition:.2s}.btn:hover{transform:translateY(-2px)}.btn.primary{background:var(--sage-dark);color:white}.btn.light{background:var(--paper)}.btnline{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.nav{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20;background:rgba(245,241,233,.94);backdrop-filter:blur(12px)}.brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.1em;font-size:.9rem}.mark{width:34px;height:34px;border:1px solid var(--sage-dark);border-radius:50%;display:grid;place-items:center;color:var(--sage-dark);font-family:var(--serif);font-size:1.2rem}.navlinks{display:flex;gap:27px;font-size:.85rem;color:#55574e}.navlinks a:hover{color:var(--rose)}.menu{display:none;background:none;border:0;font:inherit;font-size:1.4rem}.hero{padding:64px 0 78px;display:grid;grid-template-columns:1.02fr .98fr;gap:54px;align-items:center}.hero-copy{padding:20px 0}.hero h1 span{color:var(--sage)}.hero-photo{height:610px;border-radius:48% 48% 18px 18px;overflow:hidden;position:relative;background:var(--sand)}.photo-note{position:absolute;bottom:20px;left:20px;background:var(--paper);padding:14px 18px;border-radius:14px;max-width:220px;font-size:.83rem}.photo-note strong{display:block;color:var(--sage-dark)}.tiny{font-size:.83rem;color:var(--muted)}.ticker{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:17px 0;overflow:hidden;white-space:nowrap;color:var(--sage-dark);font-size:.76rem;letter-spacing:.16em;text-transform:uppercase}.ticker span{margin:0 24px}.section{padding:100px 0}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:42px}.section-head p{max-width:430px;color:var(--muted);margin-bottom:5px}.intro-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:70px;align-items:center}.intro-img{height:470px;border-radius:16px;overflow:hidden;background:var(--sand)}.intro-copy{max-width:560px}.quote{font-family:var(--serif);font-size:clamp(1.7rem,3vw,2.5rem);line-height:1.3;margin:28px 0;color:var(--sage-dark)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:var(--paper);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:transform .2s}.card:hover{transform:translateY(-5px)}.card-img{height:240px;background:var(--sand)}.card-body{padding:24px}.tag{display:inline-block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--sage-dark);background:#e8eadf;border-radius:99px;padding:6px 10px;margin-bottom:15px}.card p{font-size:.93rem;color:var(--muted)}.read{font-weight:700;font-size:.87rem;color:var(--sage-dark)}.split{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.sage-panel{background:var(--sage-dark);color:#fffdf8;border-radius:20px;padding:clamp(30px,5vw,62px)}.sage-panel .eyebrow{color:#d9dfcf}.sage-panel p{color:#e2e4dc}.list{list-style:none;padding:0;margin:25px 0}.list li{padding:13px 0;border-bottom:1px solid rgba(255,255,255,.22);display:flex;gap:12px}.list li:before{content:'✳';color:#d5b0a7}.soft-photo{height:530px;border-radius:16px;overflow:hidden;background:var(--sand)}.real-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:22px}.real-main{height:500px;border-radius:18px;overflow:hidden;position:relative;background:var(--sand)}.real-side{display:grid;grid-template-rows:1fr 1fr;gap:22px}.real-small{min-height:230px;border-radius:18px;overflow:hidden;position:relative;background:var(--sand)}.image-label{position:absolute;bottom:16px;left:16px;right:16px;padding:17px 19px;background:rgba(255,253,248,.92);border-radius:12px}.image-label strong{font-family:var(--serif);font-size:1.3rem;display:block}.image-label span{font-size:.82rem;color:var(--muted)}.brand-section{background:var(--sand)}.brand-box{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.brand-symbol{height:360px;border-radius:50%;background:var(--sage-dark);display:grid;place-items:center;color:var(--cream);font-family:var(--serif);font-size:clamp(7rem,18vw,14rem);line-height:1;max-width:360px;margin:auto;width:100%}.newsletter{padding:85px 0;text-align:center;background:var(--rose);color:#2c2925}.newsletter h2{max-width:700px;margin:12px auto 18px}.newsletter p{max-width:550px;margin:0 auto 28px}.newsletter .btn{border-color:#3c3732;background:#3c3732;color:white}.footer{padding:40px 0}.footer-top{display:flex;justify-content:space-between;gap:30px;align-items:center;padding-bottom:28px;border-bottom:1px solid var(--line)}.footer-links{display:flex;gap:20px;font-size:.84rem;color:var(--muted)}.footer-bottom{padding-top:20px;display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:.78rem}.notice{font-size:.78rem;color:var(--muted);margin-top:16px}
-@media(max-width:800px){.wrap{width:min(100% - 32px,600px)}.nav{height:70px}.menu{display:block}.navlinks{display:none;position:absolute;top:69px;left:0;right:0;background:var(--cream);padding:20px 24px 26px;border-bottom:1px solid var(--line);flex-direction:column;gap:16px}.navlinks.open{display:flex}.hero{padding:38px 0 55px;grid-template-columns:1fr;gap:30px}.hero-copy{padding:0}.hero-photo{height:440px;order:2}.hero h1{font-size:clamp(3.5rem,16vw,5.5rem)}.section{padding:70px 0}.section-head,.intro-grid,.split,.brand-box{grid-template-columns:1fr;display:grid;gap:25px}.section-head{align-items:start}.intro-grid{gap:30px}.intro-img{height:350px}.cards{grid-template-columns:1fr;gap:16px}.card-img{height:260px}.real-grid{grid-template-columns:1fr}.real-main{height:390px}.real-side{grid-template-columns:1fr 1fr;grid-template-rows:auto}.real-small{height:250px}.soft-photo{height:390px}.brand-symbol{height:280px;max-width:280px}.footer-top,.footer-bottom{align-items:flex-start;flex-direction:column}.footer-links{flex-wrap:wrap}.photo-note{bottom:14px;left:14px}.ticker span{margin:0 14px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+:root {
+  --cream: #f5f1e9;
+  --paper: #fffdf8;
+  --ink: #292b25;
+  --muted: #77776b;
+  --sage: #74816a;
+  --sage-dark: #4e5b46;
+  --rose: #c58e86;
+  --line: #ded9ce;
+  --brown: #766254;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.7;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button, input, textarea, select {
+  font: inherit;
+}
+
+.wrap {
+  width: min(1120px, 90%);
+  margin: auto;
+}
+
+/* HEADER */
+
+header {
+  border-bottom: 1px solid var(--line);
+  background: rgba(245,241,233,.96);
+}
+
+.nav {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  font-size: .88rem;
+}
+
+.brand-mark {
+  width: 35px;
+  height: 35px;
+  border: 1px solid var(--sage);
+  color: var(--sage-dark);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  font-size: .85rem;
+  color: var(--muted);
+}
+
+.nav-links a:hover {
+  color: var(--sage-dark);
+}
+
+/* BOTONES */
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 23px;
+  border-radius: 3px;
+  background: var(--sage-dark);
+  color: white;
+  font-weight: 600;
+  font-size: .88rem;
+  border: 1px solid var(--sage-dark);
+  transition: .2s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--ink);
+  border-color: var(--ink);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--sage-dark);
+}
+
+/* HERO */
+
+.hero {
+  padding: 90px 0 85px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  align-items: center;
+  gap: 65px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  color: var(--sage-dark);
+  font-size: .72rem;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: clamp(3.5rem, 7vw, 6.3rem);
+  letter-spacing: -.055em;
+  max-width: 620px;
+}
+
+h1 span {
+  color: var(--sage);
+}
+
+.hero-description {
+  max-width: 490px;
+  margin: 25px 0;
+  color: var(--muted);
+  font-size: 1.02rem;
+}
+
+.hero-note {
+  font-size: .82rem;
+  color: var(--brown);
+  margin-top: 18px;
+}
+
+.hero-image {
+  position: relative;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 510px;
+  object-fit: cover;
+  border-radius: 48% 48% 3px 3px;
+  display: block;
+}
+
+.image-note {
+  position: absolute;
+  bottom: 22px;
+  left: -25px;
+  background: var(--paper);
+  padding: 17px 22px;
+  max-width: 230px;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  box-shadow: 0 8px 25px rgba(0,0,0,.08);
+}
+
+/* ARGUMENTACIÓN */
+
+.intro {
+  padding: 85px 0;
+  background: var(--paper);
+  text-align: center;
+}
+
+.intro h2 {
+  font-size: clamp(2.3rem, 4vw, 3.7rem);
+  max-width: 750px;
+  margin: 0 auto 25px;
+}
+
+.intro p {
+  max-width: 690px;
+  margin: auto;
+  color: var(--muted);
+}
+
+/* BENEFICIOS */
+
+.benefits {
+  padding: 95px 0;
+}
+
+.section-heading {
+  max-width: 700px;
+  margin-bottom: 42px;
+}
+
+.section-heading h2 {
+  font-size: clamp(2.4rem, 4vw, 3.6rem);
+  margin-bottom: 18px;
+}
+
+.section-heading p {
+  color: var(--muted);
+}
+
+.benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.benefit {
+  background: var(--paper);
+  padding: 30px;
+  border: 1px solid var(--line);
+  min-height: 220px;
+}
+
+.benefit-number {
+  color: var(--sage);
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+}
+
+.benefit h3 {
+  font-size: 1.5rem;
+  margin: 16px 0 12px;
+}
+
+.benefit p {
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+/* FORMULARIO */
+
+.contact {
+  padding: 95px 0;
+  background: #e9eddf;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: 65px;
+  align-items: center;
+}
+
+.contact-copy h2 {
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  margin-bottom: 20px;
+}
+
+.contact-copy p {
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+.contact-copy .small-note {
+  font-size: .85rem;
+}
+
+.contact-form {
+  background: var(--paper);
+  padding: 38px;
+  box-shadow: 0 12px 35px rgba(50,50,40,.06);
+}
+
+.contact-form h3 {
+  font-size: 1.9rem;
+  margin-bottom: 8px;
+}
+
+.form-intro {
+  color: var(--muted);
+  font-size: .87rem;
+  margin-bottom: 25px;
+}
+
+.field {
+  margin-bottom: 17px;
+}
+
+.field label {
+  display: block;
+  font-weight: 600;
+  font-size: .82rem;
+  margin-bottom: 7px;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid var(--line);
+  background: white;
+  color: var(--ink);
+  border-radius: 2px;
+  outline: none;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  border-color: var(--sage);
+  box-shadow: 0 0 0 2px rgba(116,129,106,.12);
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 105px;
+}
+
+.contact-form .btn {
+  width: 100%;
+}
+
+.privacy {
+  color: var(--muted);
+  font-size: .72rem;
+  margin-top: 13px;
+}
+
+/* TESTIMONIOS */
+
+.testimonials {
+  padding: 95px 0;
+  background: var(--paper);
+}
+
+.testimonials-heading {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 45px;
+}
+
+.testimonials-heading h2 {
+  font-size: clamp(2.4rem, 4vw, 3.5rem);
+  margin-bottom: 18px;
+}
+
+.testimonials-heading p {
+  color: var(--muted);
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.testimonial {
+  background: var(--cream);
+  padding: 30px;
+  border: 1px solid var(--line);
+}
+
+.quote {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: var(--sage);
+  line-height: 1;
+}
+
+.testimonial p {
+  margin: 15px 0;
+  color: var(--muted);
+  font-size: .92rem;
+}
+
+.testimonial strong {
+  font-size: .8rem;
+  color: var(--sage-dark);
+}
+
+/* CTA FINAL */
+
+.final-cta {
+  padding: 100px 20px;
+  text-align: center;
+  background: var(--sage-dark);
+  color: white;
+}
+
+.final-cta .eyebrow {
+  color: #dce3d4;
+}
+
+.final-cta h2 {
+  max-width: 760px;
+  margin: 0 auto 22px;
+  font-size: clamp(2.6rem, 5vw, 4.5rem);
+}
+
+.final-cta p {
+  max-width: 560px;
+  margin: 0 auto 30px;
+  color: #e1e6dc;
+}
+
+.final-cta .btn {
+  background: var(--cream);
+  border-color: var(--cream);
+  color: var(--sage-dark);
+}
+
+/* FOOTER */
+
+footer {
+  padding: 32px 0;
+  background: var(--cream);
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-copy {
+  color: var(--muted);
+  font-size: .8rem;
+}
+
+.socials {
+  display: flex;
+  gap: 20px;
+  font-size: .83rem;
+  font-weight: 600;
+  color: var(--sage-dark);
+}
+
+.socials a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 800px) {
+  .nav-links {
+    gap: 12px;
+    font-size: .76rem;
+  }
+
+  .hero-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .hero {
+    padding: 65px 0;
+  }
+
+  .hero-image img {
+    height: 400px;
+  }
+
+  .image-note {
+    left: 10px;
+  }
+
+  .benefit-grid,
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form {
+    padding: 25px;
+  }
+}
+
+@media(max-width: 520px) {
+  .nav {
+    min-height: 65px;
+  }
+
+  .nav-links a:not(.nav-cta) {
+    display: none;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero-image img {
+    height: 330px;
+  }
+
+  .intro,
+  .benefits,
+  .contact,
+  .testimonials {
+    padding: 65px 0;
+  }
+
+  .final-cta {
+    padding: 75px 20px;
+  }
+}
 </style>
 </head>
+
 <body>
-<header class="nav">
-  <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;width:100%">
-    <a class="brand" href="#inicio" aria-label="Primer Set, inicio"><span class="mark">1</span><span>PRIMER SET</span></a>
-    <button class="menu" id="menuButton" aria-label="Abrir menú" aria-expanded="false">☰</button>
-    <nav class="navlinks" id="navlinks" aria-label="Navegación principal">
-      <a href="#inicio">Inicio</a><a href="#empieza">Empieza aquí</a><a href="#aprende">Aprende</a><a href="#vida-real">Vida real</a><a href="#marca">La marca</a>
+
+<!-- 1. HEADER SIMPLIFICADO -->
+<header>
+  <div class="wrap nav">
+    <a href="#inicio" class="brand">
+      <span class="brand-mark">1</span>
+      <span>PRIMER SET</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="#beneficios">Lo que encontrarás</a>
+      <a href="#contacto" class="btn nav-cta">Contáctanos</a>
     </nav>
   </div>
 </header>
+
 <main>
-<section class="hero wrap" id="inicio">
-  <div class="hero-copy">
-    <div class="eyebrow">Tu espacio para empezar</div>
-    <h1>Todo empieza<br>con <span>uno.</span></h1>
-    <p class="lead">Tu primer paso en el gimnasio no tiene que ser perfecto. Solo tiene que ser tuyo.</p>
-    <p class="tiny">Sin presión. Sin comparaciones. A tu ritmo.</p>
-    <div class="btnline"><a class="btn primary" href="#empieza">Empieza desde cero <span>↗</span></a><a class="btn" href="#marca">Conoce Primer Set</a></div>
-  </div>
-  <div class="hero-photo">
-    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1100&q=85" alt="Espacio de gimnasio con equipo de entrenamiento" fetchpriority="high">
-    <div class="photo-note"><strong>Un set a la vez.</strong>Aprender también es parte del progreso.</div>
-  </div>
-</section>
-<div class="ticker"><div class="wrap"><span>Empieza donde estás</span> ✳ <span>Aprende a tu ritmo</span> ✳ <span>Cada logro cuenta</span> ✳ <span>Empieza donde estás</span></div></div>
 
-<section class="section wrap" id="marca">
-  <div class="intro-grid">
-    <div class="intro-img"><img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=900&q=85" alt="Persona haciendo ejercicio en un espacio de entrenamiento" loading="lazy"></div>
-    <div class="intro-copy">
-      <div class="eyebrow">Hola, somos Primer Set</div>
-      <h2>El gimnasio también se aprende.</h2>
-      <p class="lead">Sabemos que empezar puede sentirse intimidante: no conocer las máquinas, no saber qué hacer o pensar que todo el mundo te está mirando.</p>
-      <p>Primer Set es una guía cercana para entender lo básico, resolver esas dudas que a veces da pena preguntar y recordar que nadie nace sabiendo entrenar.</p>
-      <div class="quote">“No tienes que saberlo todo para empezar. Vienes a aprender.”</div>
-      <a class="read" href="#empieza">Vamos paso a paso ↗</a>
+<!-- 2. TITULAR GANADOR + 4. IMAGEN GANADORA -->
+<section class="hero" id="inicio">
+  <div class="wrap hero-grid">
+
+    <div>
+      <div class="eyebrow">Tu espacio para empezar</div>
+
+      <h1>
+        El primer paso no tiene que ser <span>perfecto.</span>
+      </h1>
+
+      <p class="hero-description">
+        ¿Quieres empezar en el gimnasio, pero no sabes por dónde?
+        En Primer Set encontrarás una guía cercana, sencilla y sin
+        juicios para que comiences a tu propio ritmo.
+      </p>
+
+      <a href="#contacto" class="btn">
+        Quiero empezar →
+      </a>
+
+      <p class="hero-note">
+        No tienes que saberlo todo para comenzar.
+      </p>
     </div>
-  </div>
-</section>
 
-<section class="section" id="empieza" style="background:#eee8dc">
-  <div class="wrap">
-    <div class="section-head"><div><div class="eyebrow">Tu primer paso</div><h2>Empieza aquí.</h2></div><p>Guarda esta guía mental para tu primer día. No necesitas hacerlo todo de golpe; elige un paso y empieza por ahí.</p></div>
-    <div class="cards">
-      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=85" alt="Persona preparándose para entrenar" loading="lazy"></div><div class="card-body"><span class="tag">Guía para principiantes</span><h3>¿Qué llevo al gimnasio?</h3><p>Lo básico para sentirte preparada: ropa cómoda, agua, toalla si la necesitas y una rutina sencilla.</p><a class="read" href="#preguntas">Ver checklist ↗</a></div></article>
-      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=85" alt="Equipo de entrenamiento en un gimnasio" loading="lazy"></div><div class="card-body"><span class="tag">Sin presión</span><h3>¿Y si no sé usar las máquinas?</h3><p>Es normal no conocerlas. Pide una demostración al personal y empieza con poco peso mientras aprendes el movimiento.</p><a class="read" href="#aprende">Aprende lo básico ↗</a></div></article>
-      <article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=85" alt="Persona entrenando con mancuernas" loading="lazy"></div><div class="card-body"><span class="tag">Primeros días</span><h3>¿Cómo organizo mi rutina?</h3><p>Empieza con una rutina simple y realista. La constancia se construye con hábitos que puedes mantener.</p><a class="read" href="#aprende">Descubre cómo ↗</a></div></article>
-    </div>
-  </div>
-</section>
-
-<section class="section wrap" id="aprende">
-  <div class="section-head"><div><div class="eyebrow">Una cosa a la vez</div><h2>Aprende a tu ritmo.</h2></div><p>Pequeñas guías para que el gimnasio deje de sentirse como un idioma desconocido.</p></div>
-  <div class="split">
-    <div class="sage-panel">
-      <div class="eyebrow">Tu mini guía</div><h2 style="font-size:clamp(2.1rem,4vw,3.5rem)">Antes de tu próximo entrenamiento</h2>
-      <p>Una rutina no tiene que ser complicada para ser útil. Prueba con estas bases:</p>
-      <ul class="list"><li>Ten claro qué grupo muscular o movimiento vas a trabajar.</li><li>Aprende la técnica antes de aumentar el peso.</li><li>Descansa entre series y escucha cómo te sientes.</li><li>Registra tus ejercicios para notar tu progreso.</li></ul>
-      <a class="btn light" href="#preguntas">Resolver mis dudas ↗</a>
-    </div>
-    <div class="soft-photo"><img src="https://images.unsplash.com/photo-1517838277536-fd7cf7b4f9a5?auto=format&fit=crop&w=900&q=85" alt="Entrenamiento con pesas en gimnasio" loading="lazy"></div>
-  </div>
-  <div class="cards" style="margin-top:22px">
-    <article class="card"><div class="card-body"><span class="tag">Conceptos básicos</span><h3>Series y repeticiones</h3><p>Las repeticiones son cuántas veces haces un movimiento; las series son los bloques de repeticiones. Ejemplo: 3 series de 10 repeticiones.</p><a class="read" href="#preguntas">Entender más ↗</a></div></article>
-    <article class="card"><div class="card-body"><span class="tag">En el gym</span><h3>Cómo elegir el peso</h3><p>Elige una carga que te permita mantener buena técnica y controlar el movimiento. No tienes que competir con nadie.</p><a class="read" href="#preguntas">Recordar lo importante ↗</a></div></article>
-    <article class="card"><div class="card-body"><span class="tag">Hábitos</span><h3>La constancia real</h3><p>Un plan que cabe en tu vida suele ser más útil que uno perfecto que no puedes sostener. Empieza pequeño y ajusta.</p><a class="read" href="#vida-real">Ver vida real ↗</a></div></article>
-  </div>
-</section>
-
-<section class="section" id="vida-real" style="background:#e9e3d7">
-  <div class="wrap">
-    <div class="section-head"><div><div class="eyebrow">Lo que también cuenta</div><h2>Vida real, no vida perfecta.</h2></div><p>Habrá días increíbles y días en los que solo llegar ya fue un logro. Los dos forman parte del camino.</p></div>
-    <div class="real-grid">
-      <div class="real-main"><img src="https://images.unsplash.com/photo-1517838277536-fd7cf7b4f9a5?auto=format&fit=crop&w=1100&q=85" alt="Momento de entrenamiento en el gimnasio" loading="lazy"><div class="image-label"><strong>No tienes que verte como alguien que lleva años entrenando.</strong><span>Solo necesitas darte permiso de aprender.</span></div></div>
-      <div class="real-side">
-        <div class="real-small"><img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=700&q=85" alt="Movimiento y bienestar" loading="lazy"><div class="image-label"><strong>Un día a la vez.</strong><span>Tu progreso, tu ritmo.</span></div></div>
-        <div class="real-small"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=700&q=85" alt="Preparación para una sesión de ejercicio" loading="lazy"><div class="image-label"><strong>Cuenta aunque sea poquito.</strong><span>Los pequeños hábitos suman.</span></div></div>
+    <div class="hero-image">
+      <img
+        src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1100&q=85"
+        alt="Espacio de entrenamiento en un gimnasio"
+      >
+      <div class="image-note">
+        Un set a la vez. Aprender también es parte del progreso.
       </div>
     </div>
+
   </div>
 </section>
 
-<section class="section wrap" id="preguntas">
-  <div class="section-head"><div><div class="eyebrow">Preguntas sin pena</div><h2>Todo el mundo empieza por algo.</h2></div><p>Algunas dudas comunes para que llegues con más tranquilidad. Y si algo no te queda claro, pregunta: para eso estamos aprendiendo.</p></div>
-  <div style="max-width:820px;margin:auto">
-    <details style="border-top:1px solid var(--line);padding:20px 0"><summary style="font-weight:700;cursor:pointer">¿Tengo que ir todos los días?</summary><p style="color:var(--muted);margin:14px 0 0">No. La frecuencia depende de tu experiencia, objetivos, descanso y agenda. Para empezar, elige un ritmo realista y busca orientación profesional si la necesitas.</p></details>
-    <details style="border-top:1px solid var(--line);padding:20px 0"><summary style="font-weight:700;cursor:pointer">¿Qué hago si no sé usar un aparato?</summary><p style="color:var(--muted);margin:14px 0 0">Pide al personal del gimnasio que te explique cómo ajustarlo y usarlo de forma segura. Empieza con una carga ligera y prioriza la técnica.</p></details>
-    <details style="border-top:1px solid var(--line);padding:20px 0"><summary style="font-weight:700;cursor:pointer">¿Y si siento que todos me están mirando?</summary><p style="color:var(--muted);margin:14px 0 0">Es una sensación común cuando algo es nuevo. Llevar un plan sencillo, usar audífonos si te ayudan y pedir apoyo puede hacer que te sientas más cómoda con el tiempo.</p></details>
-    <details style="border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:20px 0"><summary style="font-weight:700;cursor:pointer">¿Necesito una rutina perfecta desde el primer día?</summary><p style="color:var(--muted);margin:14px 0 0">No. Necesitas una forma segura y alcanzable de comenzar. Aprende los movimientos básicos y adapta tu plan según tu experiencia y necesidades.</p></details>
+<!-- 3. ARGUMENTACIÓN -->
+<section class="intro">
+  <div class="wrap">
+    <div class="eyebrow">Empezar también es aprender</div>
+
+    <h2>
+      No necesitas experiencia para dar el primer paso.
+    </h2>
+
+    <p>
+      Sabemos que entrar al gimnasio por primera vez puede sentirse
+      intimidante. No conocer las máquinas, no saber qué ejercicios
+      hacer o tener pena de preguntar es más común de lo que imaginas.
+      Por eso existe Primer Set: para acompañarte con información
+      sencilla, experiencias reales y consejos que puedas aplicar
+      desde tu primer entrenamiento.
+    </p>
   </div>
-  <p class="notice">El contenido de Primer Set es educativo y no sustituye la orientación personalizada de profesionales del ejercicio o de la salud.</p>
 </section>
 
-<section class="brand-section section">
-  <div class="wrap brand-box">
-    <div><div class="eyebrow">Nuestra filosofía</div><h2>No necesitas tenerlo resuelto para empezar.</h2><p class="lead">Primer Set nació para hacer más amable ese primer paso: con información clara, una comunidad cercana y espacio para equivocarte, preguntar y volver a intentarlo.</p><p>Porque el gimnasio no se trata de llegar sabiendo. Se trata de darte la oportunidad de aprender.</p><a class="btn primary" href="#inicio">Volver al principio ↑</a></div>
-    <div class="brand-symbol" aria-label="Símbolo de Primer Set">1<span style="font-family:var(--sans);font-size:1rem;letter-spacing:.18em;position:absolute;transform:translateY(100px)">PRIMER SET</span></div>
+<!-- 7. PUNTOS CLAVE Y BENEFICIOS -->
+<section class="benefits" id="beneficios">
+  <div class="wrap">
+
+    <div class="section-heading">
+      <div class="eyebrow">Lo que encontrarás aquí</div>
+      <h2>Todo empieza por aprender lo básico.</h2>
+      <p>
+        Pequeñas herramientas que pueden hacer que tu experiencia
+        en el gimnasio sea mucho más sencilla.
+      </p>
+    </div>
+
+    <div class="benefit-grid">
+
+      <article class="benefit">
+        <div class="benefit-number">01</div>
+        <h3>Guías sencillas</h3>
+        <p>
+          Aprende qué llevar, cómo prepararte y qué hacer cuando
+          llegues al gimnasio.
+        </p>
+      </article>
+
+      <article class="benefit">
+        <div class="benefit-number">02</div>
+        <h3>Consejos prácticos</h3>
+        <p>
+          Descubre lo básico sobre ejercicios, máquinas, hábitos
+          y entrenamiento.
+        </p>
+      </article>
+
+      <article class="benefit">
+        <div class="benefit-number">03</div>
+        <h3>Experiencias reales</h3>
+        <p>
+          Identifícate con situaciones cotidianas, dudas y momentos
+          que también forman parte de comenzar.
+        </p>
+      </article>
+
+    </div>
   </div>
 </section>
-<section class="newsletter">
-  <div class="wrap"><div class="eyebrow">Tu primer set empieza hoy</div><h2>Un pequeño paso también es progreso.</h2><p>Guarda esta página, vuelve cuando tengas dudas y recuerda: no tienes que compararte con nadie para empezar.</p><a class="btn" href="#empieza">Encuentra tu primer paso ↗</a></div>
+
+<!-- 5. FORMULARIO OPTIMIZADO + 6. CTA -->
+<section class="contact" id="contacto">
+  <div class="wrap contact-grid">
+
+    <div class="contact-copy">
+      <div class="eyebrow">Estamos para acompañarte</div>
+
+      <h2>Tu primer paso puede comenzar aquí.</h2>
+
+      <p>
+        ¿Tienes alguna duda, quieres compartir tu experiencia
+        o te gustaría colaborar con Primer Set?
+        Nos encantará leerte.
+      </p>
+
+      <p class="small-note">
+        Déjanos tus datos y cuéntanos qué tienes en mente.
+        Nos pondremos en contacto contigo.
+      </p>
+    </div>
+
+    <form
+      class="contact-form"
+      action="https://formsubmit.co/primerset3@gmail.com"
+      method="POST"
+    >
+
+      <h3>Hablemos.</h3>
+
+      <p class="form-intro">
+        Completa el formulario. ¡Es muy sencillo!
+      </p>
+
+      <input type="hidden" name="_subject" value="Nuevo contacto desde Primer Set">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://hernandezsuzely549-lab.github.io/Primer-Set/?enviado=1#contacto">
+
+      <div class="field">
+        <label for="nombre">Nombre</label>
+        <input
+          id="nombre"
+          type="text"
+          name="Nombre"
+          placeholder="¿Cómo te llamas?"
+          required
+        >
+      </div>
+
+      <div class="field">
+        <label for="correo">Correo electrónico</label>
+        <input
+          id="correo"
+          type="email"
+          name="Correo"
+          placeholder="tucorreo@email.com"
+          required
+        >
+      </div>
+
+      <div class="field">
+        <label for="motivo">¿Por qué nos escribes?</label>
+        <select id="motivo" name="Motivo" required>
+          <option value="">Selecciona una opción</option>
+          <option>Quiero resolver una duda</option>
+          <option>Quiero compartir mi experiencia</option>
+          <option>Me interesa colaborar con Primer Set</option>
+          <option>Otro motivo</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="mensaje">Cuéntanos un poquito más</label>
+        <textarea
+          id="mensaje"
+          name="Mensaje"
+          placeholder="Escribe aquí tu mensaje..."
+          required
+        ></textarea>
+      </div>
+
+      <button type="submit" class="btn">
+        Enviar mi mensaje →
+      </button>
+
+      <p class="privacy">
+        Tus datos se utilizarán únicamente para responder a tu mensaje.
+      </p>
+
+    </form>
+  </div>
+</section>
+
+<!-- 8. TESTIMONIOS -->
+<section class="testimonials">
+  <div class="wrap">
+
+    <div class="testimonials-heading">
+      <div class="eyebrow">Una comunidad que comienza</div>
+      <h2>Tu proceso también merece ser contado.</h2>
+      <p>
+        Cada persona empieza desde un lugar diferente.
+        En Primer Set queremos dar espacio a esas experiencias reales,
+        sin comparaciones y sin presiones.
+      </p>
+    </div>
+
+    <div class="testimonial-grid">
+
+      <article class="testimonial">
+        <div class="quote">“</div>
+        <p>
+          ¿Recuerdas qué sentiste la primera vez que entraste
+          al gimnasio? Esa historia también puede ayudar a alguien más.
+        </p>
+        <strong>Comparte tu primer día</strong>
+      </article>
+
+      <article class="testimonial">
+        <div class="quote">“</div>
+        <p>
+          No tienes que dominar todas las máquinas ni conocer
+          todos los ejercicios para empezar a construir un hábito.
+        </p>
+        <strong>Cada proceso es diferente</strong>
+      </article>
+
+      <article class="testimonial">
+        <div class="quote">“</div>
+        <p>
+          Tus pequeñas victorias también cuentan.
+          Queremos conocer lo que has aprendido en el camino.
+        </p>
+        <strong>Tu experiencia importa</strong>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- 9. CTA DE ACUERDO / CIERRE -->
+<section class="final-cta">
+  <div class="eyebrow">¿Lista para comenzar?</div>
+
+  <h2>
+    No necesitas tenerlo todo resuelto. Solo empezar.
+  </h2>
+
+  <p>
+    Aprende, pregunta, equivócate y vuelve a intentarlo.
+    Aquí no se trata de hacerlo perfecto, sino de avanzar
+    un set a la vez.
+  </p>
+
+  <a href="#contacto" class="btn">
+    Sí, quiero dar el primer paso →
+  </a>
+</section>
+
 </main>
-  <section class="section wrap" id="redes" style="text-align:center;background:#f5f1e9;">
-  <div class="eyebrow">Sigamos aprendiendo juntas</div>
-  <h2>Encuentra a Primer Set en redes</h2>
-  <p class="lead">Más consejos, más experiencias y pequeños pasos para comenzar.</p>
-  <div style="display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:24px;">
-    <a class="btn btn-primary" href="https://www.instagram.com/_primerset/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
-    <a class="btn" href="https://www.tiktok.com/@primer.set" target="_blank" rel="noopener noreferrer">TikTok ↗</a>
+
+<!-- 10. FOOTER SIMPLIFICADO -->
+<footer>
+  <div class="wrap footer-inner">
+
+    <a href="#inicio" class="brand">
+      <span class="brand-mark">1</span>
+      <span>PRIMER SET</span>
+    </a>
+
+    <div class="socials">
+      <a href="https://www.instagram.com/_primerset/"
+         target="_blank" rel="noopener noreferrer">Instagram</a>
+
+      <a href="https://www.tiktok.com/@primer.set"
+         target="_blank" rel="noopener noreferrer">TikTok</a>
+    </div>
+
+    <p class="footer-copy">
+      © <span id="year"></span> Primer Set. Un set a la vez.
+    </p>
+
   </div>
-</section>
-<footer class="footer wrap">
-  <div class="footer-top"><a class="brand" href="#inicio"><span class="mark">1</span><span>PRIMER SET</span></a><div class="footer-links"><a href="#empieza">Empieza aquí</a><a href="#aprende">Aprende</a><a href="#vida-real">Vida real</a><a href="#marca">Sobre la marca</a></div></div>
-  <div class="footer-bottom"><span>© <span id="year"></span> Primer Set. Un set a la vez.</span><span>Hecho para quienes están empezando. ♡</span></div>
 </footer>
+
 <script>
-const menuButton=document.getElementById('menuButton');const navlinks=document.getElementById('navlinks');
-menuButton.addEventListener('click',()=>{const open=navlinks.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));menuButton.textContent=open?'×':'☰'});
-navlinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navlinks.classList.remove('open');menuButton.setAttribute('aria-expanded','false');menuButton.textContent='☰'}));
-document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+
+if (new URLSearchParams(window.location.search).get("enviado") === "1") {
+  const form = document.querySelector(".contact-form");
+  const notice = document.createElement("p");
+  notice.textContent = "¡Gracias por escribirnos! Tu mensaje fue enviado.";
+  notice.style.cssText =
+    "background:#e9eddf;color:#4e5b46;padding:14px;margin-bottom:18px;font-weight:600;";
+  form.insertBefore(notice, form.querySelector("h3"));
+}
 </script>
+
 </body>
 </html>
