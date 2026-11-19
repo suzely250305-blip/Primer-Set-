@@ -105,3 +105,77 @@ footer{background:var(--wine);color:var(--cream);padding:45px 0}.footer-row{disp
   }
 }
 
+/* TARJETAS DE COMUNIDAD - IDENTIDAD PRIMER SET */
+
+.community-section {
+  background: #FFF7EC !important;
+  padding: 85px 0 !important;
+}
+
+.community-section .community-heading {
+  max-width: 850px !important;
+  margin: 0 auto 45px !important;
+  text-align: center !important;
+}
+
+.community-section .community-heading h2 {
+  font-family: 'Playfair Display', serif !important;
+  color: #5B1020 !important;
+  font-size: clamp(32px, 5vw, 48px) !important;
+  line-height: 1.1 !important;
+}
+
+.community-section .community-heading p {
+  color: #756A67 !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 16px !important;
+  line-height: 1.7 !important;
+}
+
+.community-section .community-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 18px !important;
+}
+
+.community-section .community-card {
+  background: #F4E8D9 !important;
+  border: 1px solid #E3D2C4 !important;
+  border-radius: 0 !important;
+  padding: 30px !important;
+  min-height: 235px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  box-shadow: none !important;
+}
+
+.community-section .quote-mark {
+  color: #FF705E !important;
+  font-family: 'Playfair Display', serif !important;
+  font-size: 36px !important;
+  line-height: 1 !important;
+}
+
+.community-section .community-card p {
+  color: #756A67 !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 15px !important;
+  line-height: 1.8 !important;
+  margin: 18px 0 !important;
+}
+
+.community-section .community-card h3 {
+  color: #5B1020 !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  margin: 0 !important;
+}
+
+@media (max-width: 800px) {
+  .community-section .community-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
