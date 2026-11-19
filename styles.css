@@ -105,10 +105,11 @@ footer{background:var(--wine);color:var(--cream);padding:45px 0}.footer-row{disp
   }
 }
 
+
 /* TARJETAS DE COMUNIDAD - IDENTIDAD PRIMER SET */
 
 .community-section {
-  background: #FFF7EC !important;
+  background: var(--cream) !important;
   padding: 85px 0 !important;
 }
 
@@ -120,13 +121,13 @@ footer{background:var(--wine);color:var(--cream);padding:45px 0}.footer-row{disp
 
 .community-section .community-heading h2 {
   font-family: 'Playfair Display', serif !important;
-  color: #5B1020 !important;
+  color: var(--wine) !important;
   font-size: clamp(32px, 5vw, 48px) !important;
   line-height: 1.1 !important;
 }
 
 .community-section .community-heading p {
-  color: #756A67 !important;
+  color: #756a67 !important;
   font-family: 'DM Sans', sans-serif !important;
   font-size: 16px !important;
   line-height: 1.7 !important;
@@ -136,29 +137,47 @@ footer{background:var(--wine);color:var(--cream);padding:45px 0}.footer-row{disp
   display: grid !important;
   grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
   gap: 18px !important;
+  width: 100% !important;
 }
 
 .community-section .community-card {
-  background: #F4E8D9 !important;
-  border: 1px solid #E3D2C4 !important;
-  border-radius: 0 !important;
+  background: var(--paper) !important;
+  border: 1px solid #e3d2c4 !important;
+  border-radius: 18px !important;
   padding: 30px !important;
   min-height: 235px !important;
   display: flex !important;
   flex-direction: column !important;
   justify-content: space-between !important;
-  box-shadow: none !important;
+  box-shadow: 0 8px 22px rgba(91, 16, 32, 0.06) !important;
+}
+
+.community-section .community-card:nth-child(4n+1) {
+  background: #f4e8d9 !important;
+}
+
+.community-section .community-card:nth-child(4n+2) {
+  background: #fce4df !important;
+}
+
+.community-section .community-card:nth-child(4n+3) {
+  background: #e9edda !important;
+}
+
+.community-section .community-card:nth-child(4n) {
+  background: #e7eafa !important;
 }
 
 .community-section .quote-mark {
-  color: #FF705E !important;
+  display: block !important;
   font-family: 'Playfair Display', serif !important;
   font-size: 36px !important;
   line-height: 1 !important;
+  color: var(--coral) !important;
 }
 
 .community-section .community-card p {
-  color: #756A67 !important;
+  color: #756a67 !important;
   font-family: 'DM Sans', sans-serif !important;
   font-size: 15px !important;
   line-height: 1.8 !important;
@@ -166,9 +185,9 @@ footer{background:var(--wine);color:var(--cream);padding:45px 0}.footer-row{disp
 }
 
 .community-section .community-card h3 {
-  color: #5B1020 !important;
-  font-family: 'DM Sans', sans-serif !important;
-  font-size: 14px !important;
+  color: var(--wine) !important;
+  font-family: 'Playfair Display', serif !important;
+  font-size: 21px !important;
   font-weight: 700 !important;
   margin: 0 !important;
 }
@@ -177,5 +196,10 @@ footer{background:var(--wine);color:var(--cream);padding:45px 0}.footer-row{disp
   .community-section .community-grid {
     grid-template-columns: 1fr !important;
   }
+
+  .community-section .community-heading h2 {
+    font-size: 30px !important;
+  }
 }
+
 
