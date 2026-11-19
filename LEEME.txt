@@ -1,15 +1,18 @@
-PRIMER SET — sitio web inicial
+PRIMER SET — NUEVO SITIO WEB
+Archivos:
+- index.html: página principal.
+- landing.html: página con información ampliada.
+- styles.css: identidad visual y estilos compartidos.
 
-Incluye:
-- index.html: página responsive completa en español.
-- Diseño editorial con paleta crema, verde salvia, café y rosa terroso.
-- Navegación por secciones, menú móvil y preguntas desplegables.
-- Textos y enlaces internos preparados.
+PUBLICAR EN GITHUB PAGES
+1. Abre el repositorio Primer-Set.
+2. Sube los tres archivos directamente a la raíz del repositorio (no dentro de otra carpeta).
+3. Pulsa Commit changes.
+4. En Settings > Pages, selecciona Deploy from a branch, branch main y carpeta /(root).
+5. Espera a que GitHub Pages termine la publicación.
+6. La página principal abre en la dirección del repositorio. La landing se abre agregando /landing.html al final.
 
-Cómo previsualizar:
-1. Descomprime el archivo ZIP.
-2. Abre index.html en Chrome o cualquier navegador.
-3. Las fotografías y tipografías requieren conexión a internet.
-
-Importante:
-Este paquete es una versión inicial lista para previsualizar y adaptar. No está publicado en Carrd ni conectado a un dominio. Carrd no importa automáticamente archivos HTML completos; para usarlo allí, hay que recrear los bloques en su editor. Si se desea publicar exactamente este código, puede alojarse en un servicio de hosting estático.
+NOTAS
+- Las fotografías son enlaces de Unsplash y las tipografías se cargan desde Google Fonts; requieren internet.
+- El logotipo está recreado como texto y símbolo para esta primera versión. Podemos reemplazarlo por el archivo oficial cuando lo tengamos.
+- Revisa los enlaces sociales antes de entregar. Correo configurado: primerset3@gmail.com.
