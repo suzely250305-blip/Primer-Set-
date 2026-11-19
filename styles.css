@@ -20,3 +20,83 @@ footer{background:var(--wine);color:var(--cream);padding:45px 0}.footer-row{disp
 .email-box{background:var(--lime);border-radius:var(--radius);padding:35px;display:flex;justify-content:space-between;align-items:center;gap:25px}.email-box h2{font-size:38px;margin:0}.email-box p{margin:8px 0 0;color:#4b4b24}
 @media(max-width:800px){.nav{height:auto;min-height:70px;flex-wrap:wrap;padding:14px 0}.navlinks{order:3;width:100%;overflow:auto;gap:20px;padding:8px 0 2px}.navlinks a{white-space:nowrap}.hero{padding:48px 0}.hero-grid,.split,.subhero-grid{grid-template-columns:1fr;gap:35px}.hero-art{min-height:390px}.hero-photo{height:350px;width:78%}.hero-sticker{width:140px;height:140px;font-size:14px}.cards,.steps{grid-template-columns:1fr}.section{padding:65px 0}.photo-stack img{height:360px}.cta-inner,.email-box{align-items:flex-start;flex-direction:column}.faq{grid-template-columns:1fr;gap:10px}}
 @media(max-width:460px){.wrap{width:min(100% - 30px,1160px)}h1{font-size:53px}.lead{font-size:16px}.hero-art{min-height:330px}.hero-photo{height:295px}.hero-sticker{width:118px;height:118px}.spark{font-size:45px}}
+
+/* SECCIÓN DE COMUNIDAD - PRIMER SET */
+
+.community-section {
+  padding: 85px 0;
+  background: #fffaf3;
+}
+
+.community-heading {
+  max-width: 720px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.community-heading h2 {
+  margin: 16px 0;
+}
+
+.community-heading p {
+  color: #756a67;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.community-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.community-card {
+  background: #f4f0e8;
+  border: 1px solid #ded8cd;
+  padding: 30px;
+  min-height: 235px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform .25s ease;
+}
+
+.community-card:hover {
+  transform: translateY(-5px);
+}
+
+.quote-mark {
+  font-family: Georgia, serif;
+  font-size: 42px;
+  line-height: .8;
+  color: #829078;
+}
+
+.community-card p {
+  color: #756a67;
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 22px 0;
+}
+
+.community-card h3 {
+  color: #345044;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  .community-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .community-section {
+    padding: 65px 0;
+  }
+
+  .community-card {
+    min-height: 205px;
+  }
+}
